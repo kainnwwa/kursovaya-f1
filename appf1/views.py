@@ -5,3 +5,6 @@ from .serializers import ProductSerializer # <-- Импортируем наш �
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer # <-- Указываем его здесь
+
+from django.shortcuts import render
+
